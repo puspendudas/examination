@@ -1,0 +1,35 @@
+
+/**
+* @doc:
+*  single lesson and exam layout desgin
+* @Components:
+*   /components/student/lesson
+*       [SingleResource]
+*
+* @browser path:
+*   /learning/my-courses/{course}
+*
+* @verssion 0.0.1
+*/
+
+.resource-single {
+    position: relative;
+    top: 0;
+    width: 100%;
+
+    &.sidebar {
+        .session {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 350px;
+            background: #fff;
+        }
+        .single-exam,.single-lesson {
+            width: calc(100% - 350px);
+            margin-right: 350px
+        }
+    }
+
+    
+}
